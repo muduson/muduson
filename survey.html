@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take the survey to help improve the site">
+    <meta name="keywords" content="survey, feedback">
+    <meta name="author" content="Mahmoud">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Survey</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Your Feedback</h2>
+            <form id="surveyForm" method="POST">
+                <label for="satisfaction">How satisfied are you with my website?</label><br>
+                <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                <label for="satisfied">Satisfied</label><br>
+                <input type="radio" id="unsatisfied" name="satisfaction" value="unsatisfied">
+                <label for="unsatisfied">Unsatisfied</label><br>
+
+                <label for="suggestions">Any suggestions for improvement?</label><br>
+                <textarea id="suggestions" name="suggestions"></textarea><br>
+
+                <button type="submit">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">© 2025 Mahmoud's Portfolio</p>
+    </footer>
+</body>
+</html>

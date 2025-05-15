@@ -1,0 +1,135 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("Screenshot (4).png");
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    background-image: url("Screenshot (25).png");
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+    .two-columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .two-columns section {
+        flex: 1;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    
+    /* Make it responsive for mobile */
+    @media (max-width: 768px) {
+        .two-columns {
+            flex-direction: column;
+        }
+    }
+    
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .project {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    /* Make it responsive for tablets and phones */
+    @media (max-width: 992px) {
+        .projects {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .projects {
+            grid-template-columns: 1fr;
+        }
+    }
+ /* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode nav {
+    background-color: #1f1f1f;
+}
+
+.dark-mode a {
+    color: #90caf9;
+}
+button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode a {
+    color: #ffcc00;
+}
